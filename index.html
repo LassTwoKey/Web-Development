@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
-	<title>Web development</title>
+	<title>Web Development</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="img/favicon/1.png">
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220203192254">
+	<link rel="shortcut icon" href="img/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap&_v=20220203192254" rel="stylesheet">
 </head>
-<body>
+
+<body data-simplebar>
 	<div class="wrapper">
-<header class="header">
-	<div class="container">
-		<div class="header__content">
-			<a href="#" class="header__logo">
-				<img src="img/logo.png" alt="">
-			</a>
-			<nav class="header__menu">
-				<ul class="header__list">
-					<li><a href="#" class="header__link">Home</a></li>
-					<li><a href="#" class="header__link">About</a></li>
-					<li><a href="#" class="header__link">Servicing</a></li>
-					<li><a href="#" class="header__link">Portfolio</a></li>
-					<li><a href="#" class="header__link">Blog</a></li>
-					<li><a href="#" class="header__link">Contact us</a></li>
-				</ul>
-			</nav>
-			<div class="icon-menu">
-				<span></span>
-			</div>
-		</div>
-	</div>
-</header>		<main class="page">
-			<section class="wd-project ibg">
-				<img src="img/rectangle.jpg" alt="">
-				<div class="wd-project__body">
-					<h1 class="wd-project__title">
-						Web development project
-					</h1>
-					<div class="wd-project__text">
-						Very suitable to support all web development projects
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<a href="#" class="header__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+					</a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a data-goto-header data-goto=".about-us" href="#" class="menu__link">About</a>
+								</li>
+								<li class="menu__item"><a data-goto-header data-goto=".our-serv" href="#" class="menu__link">Our
+										Services</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".latest-works" href="#" class="menu__link">Latest Works</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".pricing-plan" href="#" class="menu__link">Pricing Plan</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".our-team-member" href="#" class="menu__link">Team</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".blog" href="#" class="menu__link">Blog</a></li>
+							</ul>
+						</nav>
 					</div>
-					<div class="wd-project__buttons">
-						<a href="#" class="wd-project__btn-1 wd-project__btn">OUR SERVICES</a>
-						<a href="#" class="wd-project__btn-2 wd-project__btn">HIRE IS NOW</a>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__wd-project wd-project">
+				<div class="wd-project__container">
+					<div class="wd-project__body">
+						<h1 class="wd-project__title">
+							Web development project
+						</h1>
+						<div class="wd-project__text">
+							Very suitable to support all web development projects
+						</div>
+						<div class="wd-project__buttons">
+							<a href="#" class="wd-project__btn-1 wd-project__btn button">OUR SERVICES</a>
+							<a href="#" class="wd-project__btn-2 wd-project__btn button">HIRE IS NOW</a>
+						</div>
 					</div>
 				</div>
 				<div class="wd-project__arrow">
-					<a class="page-scroll" href="#arrow-content-about-us">
-						<img src="img/arrow.png" alt="">
+					<div class="wd-project__air"></div>
+					<a data-goto-header data-goto=".about-us" class="wd-project__link-arrow page-scroll" href="#">
+						<picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt=""></picture>
 					</a>
 				</div>
 			</section>
-			<section class="about-us" id="arrow-content-about-us">
-				<div class="container">
+			<section class="page__about-us about-us">
+				<div class="about-us__container">
 					<div class="about-us__header cont__header">
-						<h2 class="about-us__title bold-text">About Us</h2>
+						<h2 class="about-us__title bold-title-text">About Us</h2>
 						<div class="about-us__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -66,8 +73,8 @@
 					<div class="about-us__column">
 						<div class="about-us__block">
 							<div class="about-us__item">
-								<div class="about-us__image aus__image-1">
-									<img src="img/internet.png" alt="">
+								<div class="about-us__image">
+									<picture><source srcset="img/internet.webp" type="image/webp"><img src="img/internet.png" alt=""></picture>
 								</div>
 								<div class="about-us__label semi-bold-text">Awesome Icons</div>
 								<div class="about-us__sublabel regular-text">
@@ -77,8 +84,8 @@
 						</div>
 						<div class="about-us__block">
 							<div class="about-us__item">
-								<div class="about-us__image aus__image-2">
-									<img src="img/transfer.png" alt="">
+								<div class="about-us__image">
+									<picture><source srcset="img/transfer.webp" type="image/webp"><img src="img/transfer.png" alt=""></picture>
 								</div>
 								<div class="about-us__label semi-bold-text">One Page</div>
 								<div class="about-us__sublabel regular-text">
@@ -88,8 +95,8 @@
 						</div>
 						<div class="about-us__block">
 							<div class="about-us__item">
-								<div class="about-us__image aus__image-3">
-									<img src="img/head.png" alt="">
+								<div class="about-us__image">
+									<picture><source srcset="img/head.webp" type="image/webp"><img src="img/head.png" alt=""></picture>
 								</div>
 								<div class="about-us__label semi-bold-text">Fully Responsive</div>
 								<div class="about-us__sublabel regular-text">
@@ -100,107 +107,107 @@
 					</div>
 				</div>
 			</section>
-			<section class="our-serv">
-				<div class="container">
+			<section class="page__our-serv our-serv">
+				<div class="our-serv__container">
 					<div class="our-serv__header cont__header">
-						<h2 class="our-serv__title bold-text">Our Services</h2>
+						<h2 class="our-serv__title bold-title-text">Our Services</h2>
 						<div class="our-serv__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
 						</div>
 					</div>
 					<div class="our-serv__column">
-						<div class="our-serv__block">
+						<div class="our-serv__block block-os1">
 							<div class="our-serv__item">
 								<div class="our-serv__image">
-									<img class="our-serv__image1" src="img/icons/icon1.png" alt="">
-									<img class="our-serv__image2" src="img/icons/icon1_act.png" alt="">
+									<picture><source srcset="img/icons/icon1.webp" type="image/webp"><img class="our-serv__image1" src="img/icons/icon1.png" alt=""></picture>
+									<picture><source srcset="img/icons/icon1_act.webp" type="image/webp"><img class="our-serv__image2" src="img/icons/icon1_act.png" alt=""></picture>
 								</div>
 								<div class="our-serv__label semi-bold-text">Research</div>
 								<div class="our-serv__sublabel regular-text">
 									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 									voluptatum iti atque corrupti quos.
 								</div>
-								<a href="#" class="our-serv__btn btn-b semi-bold-text hook">READ MORE</a>
+								<a href="#" class="our-serv__btn button">READ MORE</a>
 							</div>
 						</div>
-						<div class="our-serv__block">
+						<div class="our-serv__block block-os2">
 							<div class="our-serv__item">
 								<div class="our-serv__image">
-									<img class="our-serv__image1" src="img/icons/icon1.png" alt="">
-									<img class="our-serv__image2" src="img/icons/icon1_act.png" alt="">
+									<picture><source srcset="img/icons/icon1.webp" type="image/webp"><img class="our-serv__image1" src="img/icons/icon1.png" alt=""></picture>
+									<picture><source srcset="img/icons/icon1_act.webp" type="image/webp"><img class="our-serv__image2" src="img/icons/icon1_act.png" alt=""></picture>
 								</div>
 								<div class="our-serv__label semi-bold-text">Portfolio</div>
 								<div class="our-serv__sublabel regular-text">
 									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 									voluptatum iti atque corrupti quos.
 								</div>
-								<a href="#" class="our-serv__btn btn-b semi-bold-text">READ MORE</a>
+								<a href="#" class="our-serv__btn button">READ MORE</a>
 							</div>
 						</div>
-						<div class="our-serv__block">
+						<div class="our-serv__block block-os3">
 							<div class="our-serv__item">
 								<div class="our-serv__image">
-									<img class="our-serv__image1" src="img/icons/icon1.png" alt="">
-									<img class="our-serv__image2" src="img/icons/icon1_act.png" alt="">
+									<picture><source srcset="img/icons/icon1.webp" type="image/webp"><img class="our-serv__image1" src="img/icons/icon1.png" alt=""></picture>
+									<picture><source srcset="img/icons/icon1_act.webp" type="image/webp"><img class="our-serv__image2" src="img/icons/icon1_act.png" alt=""></picture>
 								</div>
 								<div class="our-serv__label semi-bold-text">Support</div>
 								<div class="our-serv__sublabel regular-text">
 									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 									voluptatum iti atque corrupti quos.
 								</div>
-								<a href="#" class="our-serv__btn btn-b semi-bold-text">READ MORE</a>
+								<a href="#" class="our-serv__btn button">READ MORE</a>
 							</div>
 						</div>
-						<div class="our-serv__block">
+						<div class="our-serv__block block-os4">
 							<div class="our-serv__item">
 								<div class="our-serv__image">
-									<img class="our-serv__image1" src="img/icons/icon1.png" alt="">
-									<img class="our-serv__image2" src="img/icons/icon1_act.png" alt="">
+									<picture><source srcset="img/icons/icon1.webp" type="image/webp"><img class="our-serv__image1" src="img/icons/icon1.png" alt=""></picture>
+									<picture><source srcset="img/icons/icon1_act.webp" type="image/webp"><img class="our-serv__image2" src="img/icons/icon1_act.png" alt=""></picture>
 								</div>
 								<div class="our-serv__label semi-bold-text">Documentation</div>
 								<div class="our-serv__sublabel regular-text">
 									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 									voluptatum iti atque corrupti quos.
 								</div>
-								<a href="#" class="our-serv__btn btn-b semi-bold-text">READ MORE</a>
+								<a href="#" class="our-serv__btn button">READ MORE</a>
 							</div>
 						</div>
-						<div class="our-serv__block">
+						<div class="our-serv__block block-os5">
 							<div class="our-serv__item">
 								<div class="our-serv__image">
-									<img class="our-serv__image1" src="img/icons/icon1.png" alt="">
-									<img class="our-serv__image2" src="img/icons/icon1_act.png" alt="">
+									<picture><source srcset="img/icons/icon1.webp" type="image/webp"><img class="our-serv__image1" src="img/icons/icon1.png" alt=""></picture>
+									<picture><source srcset="img/icons/icon1_act.webp" type="image/webp"><img class="our-serv__image2" src="img/icons/icon1_act.png" alt=""></picture>
 								</div>
 								<div class="our-serv__label semi-bold-text">Development</div>
 								<div class="our-serv__sublabel regular-text">
 									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 									voluptatum iti atque corrupti quos.
 								</div>
-								<a href="#" class="our-serv__btn btn-b semi-bold-text">READ MORE</a>
+								<a href="#" class="our-serv__btn button">READ MORE</a>
 							</div>
 						</div>
-						<div class="our-serv__block">
+						<div class="our-serv__block block-os6">
 							<div class="our-serv__item">
 								<div class="our-serv__image">
-									<img class="our-serv__image1" src="img/icons/icon1.png" alt="">
-									<img class="our-serv__image2" src="img/icons/icon1_act.png" alt="">
+									<picture><source srcset="img/icons/icon1.webp" type="image/webp"><img class="our-serv__image1" src="img/icons/icon1.png" alt=""></picture>
+									<picture><source srcset="img/icons/icon1_act.webp" type="image/webp"><img class="our-serv__image2" src="img/icons/icon1_act.png" alt=""></picture>
 								</div>
 								<div class="our-serv__label semi-bold-text">Design</div>
 								<div class="our-serv__sublabel regular-text">
 									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 									voluptatum iti atque corrupti quos.
 								</div>
-								<a href="#" class="our-serv__btn btn-b semi-bold-text">READ MORE</a>
+								<a href="#" class="our-serv__btn button">READ MORE</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="latest-works">
-				<div class="container">
+			<section class="page__latest-works latest-works">
+				<div class="latest-works__container">
 					<div class="latest-works__header cont__header">
-						<h2 class="latest-works__title bold-text">Latest Works</h2>
+						<h2 class="latest-works__title bold-title-text">Latest Works</h2>
 						<div class="latest-works__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -208,11 +215,11 @@
 					</div>
 					<div class="latest-works__filter">
 						<ul class="latest-works__list">
-							<li><button data-filter="1" class="latest-works__link latest-works__link_act btn-b">ALL</button>
+							<li><button data-filter="1" class="latest-works__link latest-works__link_act button">ALL</button>
 							</li>
-							<li><button data-filter="2" class="latest-works__link btn-b">WEB DESIGN</button></li>
-							<li><button data-filter="3" class="latest-works__link btn-b">UI/UX DESIGN</button></li>
-							<li><button data-filter="4" class="latest-works__link btn-b">MOCKUPS</button></li>
+							<li><button data-filter="2" class="latest-works__link button">WEB DESIGN</button></li>
+							<li><button data-filter="3" class="latest-works__link button">UI/UX DESIGN</button></li>
+							<li><button data-filter="4" class="latest-works__link button">MOCKUPS</button></li>
 						</ul>
 					</div>
 					<div class="latest-works__image_body">
@@ -266,83 +273,113 @@
 						</div>
 					</div>
 					<div class="latest-works__btn">
-						<a href="#" class="latest-works__g-btn btn-g">VIEW ALL</a>
+						<a href="#" class="latest-works__bt button">VIEW ALL</a>
 					</div>
 				</div>
 			</section>
-			<section class="pricing-plan">
-				<div class="pricing-plan__container container">
+			<section class="page__pricing-plan pricing-plan">
+				<div class="pricing-plan__container">
 					<div class="pricing-plan__header cont__header">
-						<h2 class="pricing-plan__title bold-text">Pricing Plan</h2>
+						<h2 class="pricing-plan__title bold-title-text">Pricing Plan</h2>
 						<div class="pricing-plan__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
 						</div>
 					</div>
-					<div class="pricing-plan__content swiper">
-						<div class="pricing-plan__wrapper swiper-wrapper">
-							<div class="pricing-plan__block swiper-slide">
-								<div class="pricing-plan__item">
-									<div class="pricing-plan__item-name">Free Trail</div>
-									<div class="pricing-plan__item-cost"><span class="pricing-plan__item-NameDol">$</span><span
-											class="pricing-plan__item-NamePM">00</span>per month</div>
-									<div class="pricing-plan__item-service">30 Free Trail</div>
-									<div class="pricing-plan__item-service">5 Free Projects</div>
-									<div class="pricing-plan__item-service">PHP 5 Enabled</div>
-									<div class="pricing-plan__item-service">24/7 Suports</div>
-									<a href="#" class="pricing-plan__item-btn btn-b">Order Now</a>
+					<div class="pricing-plan__swiper-body">
+						<div class="pricing-plan__swiper-prev btn-swip icon-l-arrow"></div>
+						<div class="pricing-plan__swiper-next btn-swip icon-r-arrow"></div>
+						<div class="pricing-plan__content swiper">
+							<div class="pricing-plan__wrapper swiper-wrapper">
+								<div class="pricing-plan__block swiper-slide">
+									<div class="pricing-plan__item">
+										<div class="pricing-plan__item-name">Free Trail</div>
+										<div class="pricing-plan__item-cost">
+											<span class="pricing-plan__item-NameDol">$</span>
+											<span class="pricing-plan__item-NamePM">5</span>per month
+										</div>
+										<div class="pricing-plan__item-services">
+											<div class="pricing-plan__item-service">30 Free Trail</div>
+											<div class="pricing-plan__item-service">5 Free Projects</div>
+											<div class="pricing-plan__item-service">PHP 5 Enabled</div>
+											<div class="pricing-plan__item-service">24/7 Suports</div>
+										</div>
+										<a href="#" class="pricing-plan__item-btn button">Order Now</a>
+									</div>
+								</div>
+								<div class="pricing-plan__block swiper-slide">
+									<div class="pricing-plan__item">
+										<div class="pricing-plan__item-name">Free Trail</div>
+										<div class="pricing-plan__item-cost">
+											<span class="pricing-plan__item-NameDol">$</span>
+											<span class="pricing-plan__item-NamePM">10</span>per month
+										</div>
+										<div class="pricing-plan__item-services">
+											<div class="pricing-plan__item-service">30 Free Trail</div>
+											<div class="pricing-plan__item-service">5 Free Projects</div>
+											<div class="pricing-plan__item-service">PHP 5 Enabled</div>
+											<div class="pricing-plan__item-service">24/7 Suports</div>
+										</div>
+										<a href="#" class="pricing-plan__item-btn button">Order Now</a>
+									</div>
+								</div>
+								<div class="pricing-plan__block swiper-slide">
+									<div class="pricing-plan__item">
+										<div class="pricing-plan__item-name">Purchase</div>
+										<div class="pricing-plan__item-cost">
+											<span class="pricing-plan__item-NameDol">$</span>
+											<span class="pricing-plan__item-NamePM">50</span>per month
+										</div>
+										<div class="pricing-plan__item-services">
+											<div class="pricing-plan__item-service">30 Free Trail</div>
+											<div class="pricing-plan__item-service">5 Free Projects</div>
+											<div class="pricing-plan__item-service">PHP 5 Enabled</div>
+											<div class="pricing-plan__item-service">24/7 Suports</div>
+										</div>
+										<a href="#" class="pricing-plan__item-btn button">Order Now</a>
+									</div>
+								</div>
+								<div class="pricing-plan__block swiper-slide">
+									<div class="pricing-plan__item">
+										<div class="pricing-plan__item-name">Purchase</div>
+										<div class="pricing-plan__item-cost">
+											<span class="pricing-plan__item-NameDol">$</span>
+											<span class="pricing-plan__item-NamePM">100</span>per month
+										</div>
+										<div class="pricing-plan__item-services">
+											<div class="pricing-plan__item-service">30 Free Trail</div>
+											<div class="pricing-plan__item-service">5 Free Projects</div>
+											<div class="pricing-plan__item-service">PHP 5 Enabled</div>
+											<div class="pricing-plan__item-service">24/7 Suports</div>
+										</div>
+										<a href="#" class="pricing-plan__item-btn button">Order Now</a>
+									</div>
+								</div>
+								<div class="pricing-plan__block swiper-slide">
+									<div class="pricing-plan__item">
+										<div class="pricing-plan__item-name">Free Trail</div>
+										<div class="pricing-plan__item-cost">
+											<span class="pricing-plan__item-NameDol">$</span>
+											<span class="pricing-plan__item-NamePM">120</span>per month
+										</div>
+										<div class="pricing-plan__item-services">
+											<div class="pricing-plan__item-service">30 Free Trail</div>
+											<div class="pricing-plan__item-service">5 Free Projects</div>
+											<div class="pricing-plan__item-service">PHP 5 Enabled</div>
+											<div class="pricing-plan__item-service">24/7 Suports</div>
+										</div>
+										<a href="#" class="pricing-plan__item-btn button">Order Now</a>
+									</div>
 								</div>
 							</div>
-							<div class="pricing-plan__block swiper-slide">
-								<div class="pricing-plan__item">
-									<div class="pricing-plan__item-name">Free Trail</div>
-									<div class="pricing-plan__item-cost"><span class="pricing-plan__item-NameDol">$</span><span
-											class="pricing-plan__item-NamePM">25</span>per month</div>
-									<div class="pricing-plan__item-service">30 Free Trail</div>
-									<div class="pricing-plan__item-service">5 Free Projects</div>
-									<div class="pricing-plan__item-service">PHP 5 Enabled</div>
-									<div class="pricing-plan__item-service">24/7 Suports</div>
-									<a href="#" class="pricing-plan__item-btn btn-b">Order Now</a>
-								</div>
-							</div>
-							<div class="pricing-plan__block swiper-slide">
-								<div class="pricing-plan__item">
-									<div class="pricing-plan__item-name">Free Trail</div>
-									<div class="pricing-plan__item-cost"><span class="pricing-plan__item-NameDol">$</span><span
-											class="pricing-plan__item-NamePM">50</span>per month</div>
-									<div class="pricing-plan__item-service">30 Free Trail</div>
-									<div class="pricing-plan__item-service">5 Free Projects</div>
-									<div class="pricing-plan__item-service">PHP 5 Enabled</div>
-									<div class="pricing-plan__item-service">24/7 Suports</div>
-									<a href="#" class="pricing-plan__item-btn btn-b">Order Now</a>
-								</div>
-							</div>
-							<!-- <div class="pricing-plan__block swiper-slide">
-								<div class="pricing-plan__item">
-									<div class="pricing-plan__item-name">Free Trail</div>
-									<div class="pricing-plan__item-cost"><span class="pricing-plan__item-NameDol">$</span><span
-											class="pricing-plan__item-NamePM">75</span>per month</div>
-									<div class="pricing-plan__item-service">30 Free Trail</div>
-									<div class="pricing-plan__item-service">5 Free Projects</div>
-									<div class="pricing-plan__item-service">PHP 5 Enabled</div>
-									<div class="pricing-plan__item-service">24/7 Suports</div>
-									<a href="#" class="pricing-plan__item-btn btn-b">Order Now</a>
-								</div>
-							</div> -->
-						</div>
-						<div class="swiper-button-prev">
-
-						</div>
-						<div class="swiper-button-next">
-
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="our-team-member">
-				<div class="container">
+			<section class="page__our-team-member our-team-member">
+				<div class="our-team-member__container">
 					<div class="our-team-member__header cont__header">
-						<h2 class="our-team-member__title bold-text">Our Team Member</h2>
+						<h2 class="our-team-member__title bold-title-text">Our Team Member</h2>
 						<div class="our-team-member__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -350,48 +387,36 @@
 					</div>
 					<div class="our-team-member__body">
 						<div class="our-team-member__item">
-							<div class="our-team-member__image _image1"><img src="img/OurTeamMember/rounded1.jpg" alt=""></div>
+							<div class="our-team-member__image _image1"><picture><source srcset="img/OurTeamMember/rounded1.webp" type="image/webp"><img src="img/OurTeamMember/rounded1.jpg" alt=""></picture></div>
 							<div class="our-team-member__label semi-bold-text">John Doe</div>
 							<div class="our-team-member__sublabel regular-text">General Manager</div>
 							<div class="our-team-member__soc-media">
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-facebook" href="#"><img
-										src="img/OurTeamMember/icons/facebook2.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-twitter" href="#"><img
-										src="img/OurTeamMember/icons/twitter.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-message" href="#"><img
-										src="img/OurTeamMember/icons/message.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-basketball" href="#"><img
-										src="img/OurTeamMember/icons/basketball.png" alt=""></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-facebook" href="#"><picture><source srcset="img/OurTeamMember/icons/facebook2.webp" type="image/webp"><img src="img/OurTeamMember/icons/facebook2.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-twitter" href="#"><picture><source srcset="img/OurTeamMember/icons/twitter.webp" type="image/webp"><img src="img/OurTeamMember/icons/twitter.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-message" href="#"><picture><source srcset="img/OurTeamMember/icons/message.webp" type="image/webp"><img src="img/OurTeamMember/icons/message.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-basketball" href="#"><picture><source srcset="img/OurTeamMember/icons/basketball.webp" type="image/webp"><img src="img/OurTeamMember/icons/basketball.png" alt=""></picture></a>
 							</div>
 						</div>
 						<div class="our-team-member__item">
-							<div class="our-team-member__image _image2"><img src="img/OurTeamMember/rounded2.jpg" alt=""></div>
+							<div class="our-team-member__image _image2"><picture><source srcset="img/OurTeamMember/rounded2.webp" type="image/webp"><img src="img/OurTeamMember/rounded2.jpg" alt=""></picture></div>
 							<div class="our-team-member__label semi-bold-text">Alexa Biru</div>
 							<div class="our-team-member__sublabel regular-text">Office Director</div>
 							<div class="our-team-member__soc-media">
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-facebook" href="#"><img
-										src="img/OurTeamMember/icons/facebook2.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-twitter" href="#"><img
-										src="img/OurTeamMember/icons/twitter.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-message" href="#"><img
-										src="img/OurTeamMember/icons/message.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-basketball" href="#"><img
-										src="img/OurTeamMember/icons/basketball.png" alt=""></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-facebook" href="#"><picture><source srcset="img/OurTeamMember/icons/facebook2.webp" type="image/webp"><img src="img/OurTeamMember/icons/facebook2.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-twitter" href="#"><picture><source srcset="img/OurTeamMember/icons/twitter.webp" type="image/webp"><img src="img/OurTeamMember/icons/twitter.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-message" href="#"><picture><source srcset="img/OurTeamMember/icons/message.webp" type="image/webp"><img src="img/OurTeamMember/icons/message.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-basketball" href="#"><picture><source srcset="img/OurTeamMember/icons/basketball.webp" type="image/webp"><img src="img/OurTeamMember/icons/basketball.png" alt=""></picture></a>
 							</div>
 						</div>
 						<div class="our-team-member__item">
-							<div class="our-team-member__image _image3"><img src="img/OurTeamMember/rounded3.jpg" alt=""></div>
+							<div class="our-team-member__image _image3"><picture><source srcset="img/OurTeamMember/rounded3.webp" type="image/webp"><img src="img/OurTeamMember/rounded3.jpg" alt=""></picture></div>
 							<div class="our-team-member__label semi-bold-text">Ronobir sing</div>
 							<div class="our-team-member__sublabel regular-text">Admin</div>
 							<div class="our-team-member__soc-media">
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-facebook" href="#"><img
-										src="img/OurTeamMember/icons/facebook2.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-twitter" href="#"><img
-										src="img/OurTeamMember/icons/twitter.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-message" href="#"><img
-										src="img/OurTeamMember/icons/message.png" alt=""></a>
-								<a class="our-team-member__soc-media_i our-team-member__soc-media-basketball" href="#"><img
-										src="img/OurTeamMember/icons/basketball.png" alt=""></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-facebook" href="#"><picture><source srcset="img/OurTeamMember/icons/facebook2.webp" type="image/webp"><img src="img/OurTeamMember/icons/facebook2.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-twitter" href="#"><picture><source srcset="img/OurTeamMember/icons/twitter.webp" type="image/webp"><img src="img/OurTeamMember/icons/twitter.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-message" href="#"><picture><source srcset="img/OurTeamMember/icons/message.webp" type="image/webp"><img src="img/OurTeamMember/icons/message.png" alt=""></picture></a>
+								<a class="our-team-member__soc-media_i our-team-member__soc-media-basketball" href="#"><picture><source srcset="img/OurTeamMember/icons/basketball.webp" type="image/webp"><img src="img/OurTeamMember/icons/basketball.png" alt=""></picture></a>
 							</div>
 						</div>
 					</div>
@@ -404,10 +429,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="blog">
-				<div class="container">
+			<section class="page__blog blog">
+				<div class="blog__container">
 					<div class="blog__header cont__header">
-						<h2 class="blog__title bold-text">Blog</h2>
+						<h2 class="blog__title bold-title-text">Blog</h2>
 						<div class="blog__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -415,16 +440,16 @@
 					</div>
 					<div class="blog__body">
 						<div class="blog__block">
-							<div class="blog__image image-seo img-left"><img src="img/blog/seo.jpg" alt=""></div>
+							<div class="blog__item blog__item-img"><picture><source srcset="img/blog/seo.webp" type="image/webp"><img src="img/blog/seo.jpg" alt=""></picture></div>
 							<div class="blog__item">
 								<div class="blog__label"><a class="semi-bold-text" href="#">SEO Quis Vestibulum</a></div>
 								<div class="blog__info">
 									<div class="blog__date">
-										<img src="img/blog/calendar.png" alt="">
-										<p>14.0702017</p>
+										<picture><source srcset="img/blog/calendar.webp" type="image/webp"><img src="img/blog/calendar.png" alt=""></picture>
+										<p>14.07.2019</p>
 									</div>
 									<div class="blog__file">
-										<img src="img/blog/file.png" alt="">
+										<picture><source srcset="img/blog/file.webp" type="image/webp"><img src="img/blog/file.png" alt=""></picture>
 										<p>Development</p>
 									</div>
 								</div>
@@ -435,17 +460,15 @@
 							</div>
 						</div>
 						<div class="blog__block block-reverse">
-							<div class="blog__image blog__image-mobile"><img src="img/blog/keyboard.jpg" alt=""></div>
-							<div class="blog__item">
-								<div class="blog__label semi-bold-text"><a class="semi-bold-text" href="#">SEO Quis
-										Vestibulum</a></div>
+							<div class="blog__item item-reverse">
+								<div class="blog__label"><a class="semi-bold-text" href="#">Schedule Quis Vestibulum</a></div>
 								<div class="blog__info">
 									<div class="blog__date">
-										<img src="img/blog/calendar.png" alt="">
-										<p>14.0702017</p>
+										<picture><source srcset="img/blog/calendar.webp" type="image/webp"><img src="img/blog/calendar.png" alt=""></picture>
+										<p>14.07.2019</p>
 									</div>
 									<div class="blog__file">
-										<img src="img/blog/file.png" alt="">
+										<picture><source srcset="img/blog/file.webp" type="image/webp"><img src="img/blog/file.png" alt=""></picture>
 										<p>Development</p>
 									</div>
 								</div>
@@ -454,21 +477,20 @@
 									ut aliquip ex ea commodo consequat...
 								</div>
 							</div>
-							<div class="blog__image img-right blog__image-desktop"><img src="img/blog/keyboard.jpg" alt="">
-							</div>
+							<div class="blog__item item-reverse blog__item-img"><picture><source srcset="img/blog/keyboard.webp" type="image/webp"><img src="img/blog/keyboard.jpg" alt=""></picture></div>
 						</div>
 						<div class="blog__block">
-							<div class="blog__image img-left"><img src="img/blog/daily.jpg" alt=""></div>
+							<div class="blog__item blog__item-img"><picture><source srcset="img/blog/daily.webp" type="image/webp"><img src="img/blog/daily.jpg" alt=""></picture></div>
 							<div class="blog__item">
-								<div class="blog__label semi-bold-text"><a class="semi-bold-text" href="#">SEO Quis
-										Vestibulum</a></div>
+								<div class="blog__label"><a class="semi-bold-text" href="#">Convenience Quis Vestibulum</a>
+								</div>
 								<div class="blog__info">
 									<div class="blog__date">
-										<img src="img/blog/calendar.png" alt="">
-										<p>14.0702017</p>
+										<picture><source srcset="img/blog/calendar.webp" type="image/webp"><img src="img/blog/calendar.png" alt=""></picture>
+										<p>14.07.2019</p>
 									</div>
 									<div class="blog__file">
-										<img src="img/blog/file.png" alt="">
+										<picture><source srcset="img/blog/file.webp" type="image/webp"><img src="img/blog/file.png" alt=""></picture>
 										<p>Development</p>
 									</div>
 								</div>
@@ -481,10 +503,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact-us">
-				<div class="container">
+			<section class="page__contact-us contact-us">
+				<div class="contact-us__container">
 					<div class="contact-us__header cont__header">
-						<h2 class="contact-us__title bold-text">Contact Us</h2>
+						<h2 class="contact-us__title bold-title-text">Contact Us</h2>
 						<div class="contact-us__text regular-text">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -492,25 +514,25 @@
 					</div>
 					<div class="contact-us__body">
 						<div class="contact-us__item">
-							<div class="contact-us__image"><img class="contact-us__image_1" src="img/loc.png" alt=""></div>
+							<div class="contact-us__image"><picture><source srcset="img/loc.webp" type="image/webp"><img class="contact-us__image_1" src="img/loc.png" alt=""></picture></div>
 							<div class="contact-us__subtitle">
-								<p>Nobinagar savar,Dhaka</p>
-								<p>Bangladesh</p>
+								<a href="https://www.google.com/maps/place/%D0%A8%D0%B0%D1%80%D0%BB%D0%B5%D1%80%D1%83%D0%B0,+%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F/@50.4142507,4.4388988,13z/data=!4m13!1m7!3m6!1s0x46ed8886cfadda85:0x72ef99e6b3fcf079!2z0JXQstGA0L7Qv9Cw!3b1!8m2!3d54.5259614!4d15.2551187!3m4!1s0x47c225f096ca39c9:0x40099ab2f4d6410!8m2!3d50.4096115!4d4.4460297" class="">Charleroi</a>
+								<a href="https://www.google.com/maps/place/%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F/@50.5253692,4.6195713,8z/data=!4m13!1m7!3m6!1s0x46ed8886cfadda85:0x72ef99e6b3fcf079!2z0JXQstGA0L7Qv9Cw!3b1!8m2!3d54.5259614!4d15.2551187!3m4!1s0x47c17d64edf39797:0x47ebf2b439e60ff2!8m2!3d50.5003256!4d4.6636963">Belgium</a>
 							</div>
 						</div>
 						<div class="contact-us__item">
-							<div class="contact-us__image"><img class="contact-us__image_2" src="img/phone_call.png" alt="">
+							<div class="contact-us__image"><picture><source srcset="img/phone_call.webp" type="image/webp"><img class="contact-us__image_2" src="img/phone_call.png" alt=""></picture>
 							</div>
 							<div class="contact-us__subtitle">
-								<p>+8801743331996</p>
-								<p>+8801928737807</p>
+								<a href="tel:+8801743331996">+32, 2032, 23 92</a>
+								<a href="tel:+8801928737807">+32, 7292, 61 45</a>
 							</div>
 						</div>
 						<div class="contact-us__item">
-							<div class="contact-us__image"><img class="contact-us__image_3" src="img/mail.png" alt=""></div>
+							<div class="contact-us__image"><picture><source srcset="img/mail.webp" type="image/webp"><img class="contact-us__image_3" src="img/mail.png" alt=""></picture></div>
 							<div class="contact-us__subtitle">
-								<p>quickmasud@gmail.com</p>
-								<p>quickmasud@yahoo.com</p>
+								<a href="mailto:quickmasud@gmail.com">web-dev@gmail.com</a>
+								<a href="mailto:quickmasud@yahoo.com">webdev@yahoo.com</a>
 							</div>
 						</div>
 					</div>
@@ -529,19 +551,17 @@
 				</div>
 			</section>
 		</main>
-<footer class="footer">
-	<div class="container">
-		<div class="footer__content">
-			<div class="footer__content__copyright">
-				All rights Reserved © 2021
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__content__copyright">
+						All rights Reserved © 2021
+					</div>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
-</footer>	</div>
-	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/scrollreveal.min.js"></script>
-	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/app.min.js?_v=20220203192254"></script>
 </body>
 
 </html>
