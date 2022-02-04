@@ -1355,18 +1355,10 @@
         sr.reveal(".latest-works__list li", {
             interval: 100
         });
-        sr.reveal(".latest-works__image_block", {
-            interval: 100
-        });
         sr.reveal(".latest-works__bt", {
             distance: "100px",
             delay: 100,
             origin: "left"
-        });
-        scrollreveal_es().reveal(".pricing-plan__item", {
-            interval: 100,
-            opacity: 0,
-            distance: "0px"
         });
         sr.reveal(".our-team-member__image", {
             origin: "top",
