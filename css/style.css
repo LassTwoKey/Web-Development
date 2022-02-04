@@ -544,29 +544,28 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 0 30px 0;
   color: #000;
-}
-@media (min-width: 20em) and (max-width: 160em) {
-  @supports (padding-top: clamp( 7.5rem , 5.1785714286rem  +  11.6071428571vw , 23.75rem )) {
-    .wd-project {
-      padding-top: clamp( 7.5rem , 5.1785714286rem  +  11.6071428571vw , 23.75rem );
-    }
-  }
-  @supports not (padding-top: clamp( 7.5rem , 5.1785714286rem  +  11.6071428571vw , 23.75rem )) {
-    .wd-project {
-      padding-top: calc(7.5rem + 16.25 * (100vw - 20rem) / 140);
-    }
-  }
-}
-@media (max-width: 20em) {
-  .wd-project {
-    padding-top: 7.5rem;
-  }
 }
 
 .wd-project__body {
   text-align: center;
+}
+@media (min-width: 20em) and (max-width: 160em) {
+  @supports (margin-top: clamp( 7.5rem , 5.1785714286rem  +  11.6071428571vw , 23.75rem )) {
+    .wd-project__body {
+      margin-top: clamp( 7.5rem , 5.1785714286rem  +  11.6071428571vw , 23.75rem );
+    }
+  }
+  @supports not (margin-top: clamp( 7.5rem , 5.1785714286rem  +  11.6071428571vw , 23.75rem )) {
+    .wd-project__body {
+      margin-top: calc(7.5rem + 16.25 * (100vw - 20rem) / 140);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .wd-project__body {
+    margin-top: 7.5rem;
+  }
 }
 
 .wd-project__title {
@@ -705,6 +704,7 @@ h6 {
   justify-content: start;
   align-items: start;
   height: 100%;
+  margin: 0px 0px 30px 0px;
 }
 
 .wd-project__air {
