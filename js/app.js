@@ -232,6 +232,17 @@
         function getHash() {
             if (location.hash) return location.hash.replace("#", "");
         }
+        function fullVHfix() {
+            const fullScreens = document.querySelectorAll("[data-fullscreen]");
+            if (fullScreens.length && isMobile.any()) {
+                window.addEventListener("resize", fixHeight);
+                function fixHeight() {
+                    let vh = .01 * window.innerHeight;
+                    document.documentElement.style.setProperty("--vh", `${vh}px`);
+                }
+                fixHeight();
+            }
+        }
         let bodyLockStatus = true;
         let bodyLockToggle = (delay = 500) => {
             if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else bodyLock(delay);
@@ -4599,6 +4610,7 @@
         isWebp();
         addTouchClass();
         menuInit();
+        fullVHfix();
         pageNavigation();
     })();
 })();

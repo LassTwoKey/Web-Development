@@ -439,7 +439,7 @@ h6 {
 }
 .menu__link.active:after {
   transition: 0.3s ease;
-  position: absolute;
+  position: fixed;
   content: "";
   bottom: -5px;
   left: 0;
